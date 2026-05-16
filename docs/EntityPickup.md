@@ -117,6 +117,16 @@ ___
 [ ](#){: .alldlc .tooltip .badge }
 #### boolean Touched  {: .copyable aria-label='Variables' }
 
+Used to identify whether a collectible has been raised once, affecting Transformation Progress.
+
+Since using Morph() alone does not initialize Touched, you must manually set Touched if you want to advance the transformation progress after rerolling a collectible and then acquiring it.
+
+???+ example "Example Code"
+    ```lua
+        pickup:Morph(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, newItemId, true)
+        pickup.Touched = false
+    ```
+
 ___
 ### Wait {: aria-label='Variables' }
 [ ](#){: .alldlc .tooltip .badge }
