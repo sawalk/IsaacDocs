@@ -32,4 +32,5 @@ ___
 [ ](#){: .alldlc .tooltip .badge }
 #### boolean Touched {: .copyable aria-label='Variables' }
 
+Used to identify whether a collectible has been raised once, affecting Transformation Progress.
 ___
